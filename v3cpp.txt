@@ -1,0 +1,147 @@
+
+#include <iostream>
+#include <cmath>
+#include <ctime>
+using namespace::std;
+
+
+class circle
+{
+private:
+
+	double r[3], x[3], y[3];
+	double xt[10], yt[10];
+	int i;
+
+public:
+	double getr(int a)
+	{
+		return r[a];
+	}
+	double getx(int a)
+	{
+		return x[a];
+	}
+	double gety(int a)
+	{
+		return y[a];
+	}
+	double getxt(int a)
+	{
+		return xt[a];
+	}
+	double getyt(int a)
+	{
+		return yt[a];
+	}
+
+	void setr(int a, double b)
+	{
+		r[a] = b;
+	}
+	void setx(int a, double b)
+	{
+		x[a] = b;
+	}
+	void sety(int a, double b)
+	{
+		y[a] = b;
+	}
+	void writec(int a)
+	{
+		cout << "Координаты " << a << " круга: x = " << getx(a) << " y = " << gety(a) << " r = " << getr(a) << endl;
+	}
+	void writet(int a)
+	{
+		cout << "Координаты " << a << " точки: x = " << getxt(a) << " y = " << getyt(a) << endl;
+	}
+
+	void random()
+	{
+		for (i = 0; i < 3; i++)
+		{
+			setr(i, rand() % 45+5);
+			setx(i, rand() % 100-50);
+			sety(i, rand() % 100-50);
+
+
+			if (i > 0)
+			{
+				for (int u = 0; u < i; u++)
+				{
+					double rast = sqrt(pow(getx(i) - getx(u), 2) + pow(gety(i) - gety(u), 2));
+					cout << "Расстояние от " << u << " До " << i << " = " << rast;
+					if (getr(i) + getr(u) > rast and getr(i) + rast > getr(u) and getr(u) + rast > getr(i))
+					{
+						cout << " r1+r2= " << getr(i) + getr(u) << endl;
+						i = 0;
+					}
+					else
+						cout << " r1+r2= " << getr(i) + getr(u) << " OK " << endl;
+					cout << endl;
+				}
+			}
+		}
+		for (i = 0; i < 10; i++)
+		{
+			xt[i] = rand() % 100-50;
+			yt[i] = rand() % 100-50;
+
+			for (int u = 0; u < 3; u++)
+				if ((x[u] - xt[i])*(x[u] - xt[i]) + (y[u] - yt[i])*(y[u] - yt[i]) > pow(r[u], 2))
+				{
+					u = 3;
+					i--;
+				}
+		}
+	}
+
+	void test(int a, int b)
+	{
+		double x1 = x[a];
+		double y1 = y[a];
+		double x2 = xt[b];
+		double y2 = yt[b];
+		double rad = r[a];
+
+		cout << "Точка (" << x2 << ";" << y2;
+
+		if ((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2) <= rad * rad)
+		{
+			cout << ") принадлежит кругу " << a << endl;
+		}
+		else
+			cout << ") не принадлежит кругу " << a << endl;
+	}
+};
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	srand(time(0));
+
+	circle c;
+	int i, j;
+
+	c.random();
+	for (i = 0; i < 3; i++)
+	{
+		c.writec(i);
+	}
+	cout << endl;
+
+	for (i = 0; i < 10; i++)
+	{
+		c.writet(i);
+
+		for (j = 0; j < 3; j++)
+		{
+			c.test(j, i);
+		}
+		cout << endl;
+	}
+
+
+
+
+}
