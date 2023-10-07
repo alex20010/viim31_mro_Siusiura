@@ -1,0 +1,19 @@
+﻿  MyForm.cpp
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(19,14): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(23,14): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(27,14): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(31,14): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(35,14): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(58,44): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(58,29): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(59,44): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(59,29): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(104,1): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(134,10): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(135,10): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(119,12): warning C4101: u: неиспользованная локальная переменная
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(188,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(189,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\alexs\Desktop\proga\proga\MyForm.cpp(94): warning C4715: circle::checkc: значение возвращается не при всех путях выполнения
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  proga.vcxproj -> C:\Users\alexs\Desktop\proga\x64\Debug\proga.exe

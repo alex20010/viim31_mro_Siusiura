@@ -1,0 +1,9 @@
+C:\Users\Алексей\source\repos\proga\proga\x64\Debug\proga.vcxproj.AssemblyReference.cache
+C:\Users\Алексей\source\repos\proga\proga\x64\Debug\proga.MyForm.resources
+C:\Users\Алексей\source\repos\proga\proga\x64\Debug\proga.vcxproj.GenerateResource.cache
+D:\circles\proga\proga\x64\Debug\proga.vcxproj.AssemblyReference.cache
+D:\circles\proga\proga\x64\Debug\proga.MyForm.resources
+D:\circles\proga\proga\x64\Debug\proga.vcxproj.GenerateResource.cache
+C:\Users\alexs\Desktop\proga\proga\x64\Debug\proga.vcxproj.AssemblyReference.cache
+C:\Users\alexs\Desktop\proga\proga\x64\Debug\proga.MyForm.resources
+C:\Users\alexs\Desktop\proga\proga\x64\Debug\proga.vcxproj.GenerateResource.cache
